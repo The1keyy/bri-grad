@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 50px 20px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    border-bottom: 5px solid #f4c430;
+}
+
+.hero-section h1 {
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    animation: glow 1s infinite alternate;
+}
+
+/* Glowing Title Animation */
+@keyframes glow {
+    0% { text-shadow: 0 0 10px #fff, 0 0 20px #ff0, 0 0 30px #ff0; }
+    100% { text-shadow: 0 0 20px #fff, 0 0 30px #ff8c00, 0 0 40px #ff8c00; }
+}
+
+/* Circular Images */
+.circular-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+/* Centered Image & Heart Container */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Heart Shape */
+.heart {
+    width: 90px;
+    height: 90px;
+    background-color: red;
+    position: relative;
+    transform: rotate(-45deg);
+    animation: heartbeat 1s infinite ease-in-out;
+}
+
+.heart::before, .heart::after {
+    content: "";
+    width: 90px;
+    height: 90px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart::before { top: -45px; left: 0; }
+.heart::after { left: 45px; top: 0; }
+
+/* Heartbeat Animation */
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1) rotate(-45deg); }
+    50% { transform: scale(1.2) rotate(-45deg); }
+}
+
+/* Message Section */
+.message-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 30px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.message-section h2 { color: #f4c430; }
+
+/* Button Hover Effects */
+.btn-success:hover {
+    background-color: #28a745;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.btn-danger:hover {
+    background-color: #dc3545;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Adjust images */
+    .image-box img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    /* Smaller heart for mobile */
+    .heart {
+        width: 50px;
+        height: 50px;
+    }
+
+    .heart::before, .heart::after {
+        width: 50px;
+        height: 50px;
+    }
+
+    .heart::before { top: -25px; left: 0; }
+    .heart::after { left: 25px; top: 0; }
+
+    /* Make the title fit on mobile */
+    .hero-section h1 {
+        font-size: clamp(28px, 7vw, 52px);
+        max-width: 95vw;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: clip;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: clamp(24px, 6.5vw, 45px);
+    }
+}
+
+@media (max-width: 360px) {
+    .hero-section h1 {
+        font-size: clamp(22px, 6vw, 40px);
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    /* Keep the title large but ensure it fits */
+    .hero-section h1 {
+        font-size: clamp(26px, 7vw, 44px); 
+        max-width: 90vw;
+        white-space: nowrap;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: clip;
+    }
+
+    /* Make images smaller so they fit well */
+    .image-box img {
+        width: 120px;  
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    /* Make the heart bigger */
+    .heart {
+        width: 70px; 
+        height: 70px;
+    }
+
+    .heart::before, .heart::after {
+        width: 70px;
+        height: 70px;
+    }
+
+    .heart::before { top: -35px; left: 0; }
+    .heart::after { left: 35px; top: 0; }
+
+    /* Adjust button for better spacing */
+    .hear-more-button {
+        font-size: 16px;
+        padding: 10px 14px;
+        width: 80%;
+    }
+}

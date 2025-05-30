@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Background Music
     const audio = document.createElement("audio");
-    audio.src = "audio/drake.mp3";  // Make sure the file is inside the audio/ folder
+    audio.src = "audio/C.mp3";  // Make sure the file is inside the audio/ folder
     audio.loop = true;
     audio.volume = 0.5;
 
@@ -44,18 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Sscroll when clicking Yes/No buttons
     const responseMsg = document.getElementById("response-msg");
-
-    document.getElementById("yes-btn").addEventListener("click", function() {
-        responseMsg.innerText = "Just text me and I'll have your gift ready!!! P.S. I don’t really be on my phone like that so just bear with me.";
-        responseMsg.style.color = "gold";
-        responseMsg.scrollIntoView({ behavior: "smooth", block: "center" });
-    });
-
-    document.getElementById("no-btn").addEventListener("click", function() {
-        responseMsg.innerText = "Stop being extra and pick Yes 😑";
-        responseMsg.style.color = "lightcoral";
-        responseMsg.scrollIntoView({ behavior: "smooth", block: "center" });
-    });
 
     // "Press Me" button for music click
     document.getElementById("press-me-btn").addEventListener("click", function() {

@@ -5,20 +5,29 @@ document.addEventListener("DOMContentLoaded", function () {
     audio.loop = true;
     audio.volume = 0.5;
 
-    // Birthday message 
-    const message = `Happy Birthday, Brenda! 🎉  
+    // message 
+    const message = `
+You’re one of those rare people God clearly took His time creating.
 
-    Wishing you a birthday filled with love, joy, and all the happiness you bring to the people around you. I’m beyond grateful for our friendship, and I already know this next year is gonna be another unforgettable one.  
+You’ve walked through so much, but what stands out the most isn’t the struggle. It’s your love. Your energy. The way you show up for people with your whole heart, even when your own world feels heavy. You carry grace and strength in a way that’s soft but powerful. That’s rare.
 
-    First off, I hope you receive all the love today because you deserve every bit of it. Just wanted to take a second to say thank you, not just for today, but for always being like a sister to me. From the late night FT calls to the funniest venting sessions, it’s always a vibe. You let me troll and not take things too seriously, and honestly, I appreciate that more than you know. The advice, the laughs, the support it all means a lot.  
+You’ve always been the one who makes other people feel like they can breathe again. I know that from experience. I’ll never forget how you stayed on the phone with me, checked on me, and gave up your own comfort to make sure I got home safe. You didn’t have to. But you did. That’s just who you are.
 
-    And thank you for allowing me to be an uncle twice. Your bunny and kitten really made my resume go up. You already know I take my role seriously.  
+You love deeply, and you prove it. I’ll carry that with me forever.
 
-    And because I truly value this friendship, I had to do something special. So, I coded this whole website just for you to celebrate our friendship and make this special day even more memorable. I know I'll be the first to do it, so I hope you love it.
+Your smile, your dimples, your little “just a girl” moments that always make me laugh, even when I pretend not to. You’ve got this light in you that makes life feel softer and warmer just by being there.
 
-    Life be doing its thing, but through it all, I’m grateful for this bond we’ve built. No matter what, I got you, just like you’ve always had me.  
+And now here you are, graduating. Ready to step into the medical field, where the world needs people exactly like you. People who don’t just fix what’s broken, but see the whole person. You’re going to change lives. And with everything you’ve been through, all the pressure and weight, you’re still growing. Still rising. Turning it all into something unshakable. A diamond, for real.
 
-    So today, we celebrating, laughing, and making some more memories. Much love, fam. Get lit for me today 🕺🏿🕺🏿 BIG 21!!!!`;
+I’m so proud of you. Your journey is already a reflection of everything beautiful about you. And this is just the beginning.
+
+You’ve already been a light in my life, and I know you’re about to be that for so many others. Keep shining. You were made for this.
+
+Thank you for being another beautiful, bright Haitian woman out here making the numbers rise. Your success means something so much deeper. It opens the door for other girls who come from similar backgrounds, who need someone to look up to and say, “I can do that too.” Your story isn’t just yours. It’s fuel. It’s motivation. It even pushed me in my own journey to want to help others, to believe I could make a difference too. You didn’t just graduate. You lifted a whole community with you.
+
+Love you always,
+
+Keyshawn `;
 
     const textElement = document.getElementById("birthday-message");
     textElement.innerHTML = message.replace(/\n/g, "<br>");

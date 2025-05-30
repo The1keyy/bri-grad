@@ -41,7 +41,7 @@ Coming soon / [Add link here if deployed via GitHub Pages]
 ## ✍️ Author
 
 Created by Keyshawn Jeannot 
-Follow my work: [GitHub](https://github.com/your-username) • [LinkedIn](https://linkedin.com/in/your-profile)
+Follow my work: [GitHub](https://github.com/The1keyy) • [LinkedIn](https://www.linkedin.com/in/keyshawnjeannot/)
 
 ---
 

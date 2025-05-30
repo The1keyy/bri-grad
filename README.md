@@ -36,7 +36,7 @@ By building this, I wanted to honor someone close to me while also reflecting th
 
 ## 🔗 Live Site
 
-Coming soon / [Add link here if deployed via GitHub Pages]
+Coming soon / [https://the1keyy.github.io/bri-grad/]
 
 ## ✍️ Author
 
